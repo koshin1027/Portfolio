@@ -1,0 +1,268 @@
+body {
+  height: 1600px;
+  width: 390px;
+}
+
+@media screen and (min-width:375px) { 
+body { width: 100%;}
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.hero {
+  background-color: pink;
+  height: 844px;
+  background-image: url("images/cafe背景.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.hero img {
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+@media screen and (min-width:375px) { 
+
+  .hero img {
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 23%;
+  }
+}
+
+@media screen and (min-width:390px) { 
+  .hero img {
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+  }
+}
+
+@media screen and (min-width:414px) { 
+  .hero img {
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+  }
+}
+
+@media screen and (min-width:768px) { 
+  .hero img {
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width:820px) { 
+  .hero img {
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+}
+
+.introduction {
+  padding-top: 100px;
+}
+
+.introduction h2 {
+  padding-bottom: 50px;
+}
+
+.introduction img {
+  border-radius: 50%;
+}
+
+.access {
+  height: 950px;
+}
+
+.access h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+iframe {
+  width: 390px;
+  padding-bottom: 80px;
+}
+
+.access-right-3 {
+  padding-bottom: 80px;
+}
+
+.between-img {
+  background-image: url("images/coffeehouse-2600877_640.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+.about-menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-menu h2{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-menu p{
+  padding-top: 70px;
+}
+
+.food-main-1 {
+  padding-bottom: 80px;
+}
+
+.time-1 {
+  padding-bottom: 80px;
+}
+
+.time-2 {
+  padding-bottom: 80px;
+}
+
+.time-2 h3 {
+  padding-bottom: 50px;
+}
+
+.items {
+  height: 1700px;
+  /* background-color: pink; */
+}
+
+.item-1 {
+  height: 350px;
+  margin-bottom: 80px;
+}
+
+.item-2 {
+  height: 350px;
+  margin-bottom: 80px;
+}
+
+.item-3 {
+  height: 350px;
+  margin-bottom: 80px;
+}
+
+.item-4 {
+  height: 350px;
+  margin-bottom: 80px;
+}
+
+.between-img-2 {
+  background-image: url("images/cake-1850011_640.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+footer {
+  background-color: antiquewhite;
+  height: 300px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.DESSERT-menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.between-img-3 {
+  background-image: url("images/27482385_s.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+.Drink-menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.between-img-4 {
+  background-image: url("images/Cafe\ Lamp\ logo.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+.concept {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.concept h2{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.concept h3 {
+  padding-bottom: 80px;
+}
+
+.between-img-5 {
+  background-image: url("images/26708659_s.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+.sns-menu {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* jqery */
+/* // フェードイン前 */
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* // フェードイン後 */
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.js-box {
+  display: none;
+}
