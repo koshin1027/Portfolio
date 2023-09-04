@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- jquery -->
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        $('.js-fade').each(function () {
+          var pos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > pos - windowHeight + 100) {
+            $(this).addClass('scroll');
+          }
+        });
+      });
+
+
+      $(window).on("load", function () {
+        $('.js-box').fadeIn(2000);
+      });
+
+    });
+  </script>
+
+  <title>Cafe lamp</title>
+</head>
+
+<body id="Home">
+
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Home">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#Home">
+          <img src="css/images/Cafe Lamp logo.png" alt="Logo" width="30" height="30"
+            class="d-inline-block align-text-top">
+          Cafe lamp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#intoro">introduction</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#acc">access</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#food">food</a></li>
+                <li><a class="dropdown-item" href="#dess">deseert</a></li>
+                <li><a class="dropdown-item" href="#drink">drink</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#conce">concept</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#insta">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <div class="hero">
+    <img src="css/images/Cafe Lamp logo.png" alt="ロゴ画像" height="200px" width="200px" class="js-box">
+  </div>
+
+  <!-- introduction -->
+  <div class="introduction text-center" id="intoro">
+    <h2 class="js-fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+      <br>cupiditate dolore ab corporis repudiandae facere placeat corru
+    </h2>
+
+    <p class="js-fade">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius <br>
+      vitae dolor molestiae, officia voluptatibus. Earum esse voluptas <br>
+      reprehenderit minima officiis quisquam dicta. Voluptates ipsum quos</p>
+
+    <img src="css/images/curry-7249247_1280.jpg" alt="カフェランプのロゴ画像" height="130px" width="130px" class="js-fade">
+  </div>
+
+  <!-- Access -->
+  <div class="access text-center js-fade" id="acc">
+    <h2>Access</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13487.930352887613!2d131.5852861!3d32.3123215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354743a68cf125eb%3A0x674480c350c9e1df!2zQ2FmZeODqeODs-ODlw!5e0!3m2!1sja!2sjp!4v1692794531280!5m2!1sja!2sjp"
+      width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="access-right-1">
+      <p>OPEN:10：00－16：00 ※無くなり次第終了あり</p>
+      <p>CLOSED: 月曜日・不定休（ストーリーにてご確認ください）</p>
+    </div>
+
+    <div class="access-right-2">
+      <p>ADDRESS:Google Maps</p>
+      <p>〇〇〇〇〇〇〇〇〇-〇〇〇</p>
+      <p>TEL:000-000-000</p>
+      <p>〇〇〇＠gmail.com</p>
+    </div>
+
+    <div class="access-right-3">
+      <p>テイクアウト予約、随時承っております。</p>
+      <p>お気軽にお問い合わせください。</p>
+    </div>
+
+  </div>
+
+  <!-- between-img -->
+  <div class="between-img "></div>
+
+  <!-- about-menu -->
+  <div class="about-menu text-center js-fade" id="menu">
+    <h2>Menu</h2>
+    <h3>働くみなさんが元気になれるお食事を</h3>
+    <p>たっぷりの野菜に玄米・雑穀米、手作りスイーツにサザ・スペシャルティコーヒーなど、食材にこだわったカラダに優しい手作りごはんをお届けします。</p>
+  </div>
+
+  <!-- cafe & lunch-time -->
+  <div class="time text-center js-fade">
+    <div class="time-1">
+      <h2>ランチ</h2>
+      <p>10：00－16：00</p>
+    </div>
+    <div class="time-2">
+      <h3>“毎日違う、手作りの日替わりランチを”</h3>
+      <p>毎日メニューが変わるランチは
+        美味しいものをここで毎日食べてほしいから。
+        魚か肉を選べる野菜たっぷり手作りランチ。
+        召し上がれ！</p>
+
+      <p>『おいしく健康に』を合言葉に日々メニューを
+        考えております！</p>
+    </div>
+  </div>
+
+  <!-- food-menu -->
+  <div class="food-menu" id="food">
+    <div class="food-main-1 text-center js-fade">
+      <h2>FOOD ランチ</h2>
+      <p>価格表記は税込です</p>
+    </div>
+
+    <div class="items d-flex flex-column text-center js-fade">
+      <div class="item-1 js-fade">
+        <img src="css/images/pexels-alex-favali-921367.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-2 js-fade">
+        <img src="css/images/pexels-engin-akyurt-1527603.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-3 js-fade">
+        <img src="css/images/pexels-jer-chung-2059151.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-4 js-fade">
+        <img src="css/images/pexels-jer-chung-2116094.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- between-img-2 -->
+  <div class="between-img-2">
+
+  </div>
+
+  <!--DESSERT-menu -->
+  <div class="DESSERT-menu" id="dess">
+    <div class="food-main-1 text-center js-fade">
+      <h2>Dessert ランチ</h2>
+      <p>価格表記は税込です</p>
+    </div>
+
+    <div class="items d-flex flex-column text-center">
+      <div class="item-1 js-fade">
+        <img src="css/images/cake-1971552_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-2 js-fade">
+        <img src="css/images/eclair-3366430_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-3 js-fade">
+        <img src="css/images/ice-cream-3611698_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-4 js-fade">
+        <img src="css/images/cake-1850011_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- between-img-2 -->
+  <div class="between-img-3">
+
+  </div>
+
+  <!--Drink-menu -->
+  <div class="Drink-menu" id="drink">
+    <div class="food-main-1 text-center js-fade">
+      <h2>Drink ランチ</h2>
+      <p>価格表記は税込です</p>
+    </div>
+
+    <div class="items d-flex flex-column text-center">
+      <div class="item-1 js-fade">
+        <img src="css/images/smoothie-1578240_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-2 js-fade">
+        <img src="css/images/vegetable-juices-1725835_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-3 js-fade">
+        <img src="css/images/mineral-water-with-strawberries-1411368_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+      <div class="item-4 js-fade">
+        <img src="css/images/drink-3534434_640.jpg" width="250" height="250">
+        <p>豚肉とズッキーニのノンフライミルフィーユカツレツ</p>
+        <p>（雑穀米 or 玄米 サラダ、スープ付）</p>
+        <p>1.100円</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- between-img-2 -->
+  <div class="between-img-4">
+
+  </div>
+
+  <!-- concept -->
+  <div class="concept text-center js-fade" id="conce">
+    <h2>Concept</h2>
+    <h3>元気にごはんを食べてもらいたい。</h3>
+    <p>野菜をたくさん食べることができるように、油を減らしカロリーを抑え、加工品は使わない、</p>
+    <p>手間ひまかけたお料理は、カラダを元気にしてくれます。</p>
+  </div>
+
+  <!-- block -->
+  <div class="food-menu">
+
+    <div class="items d-flex flex-column text-center">
+      <div class="item-1 js-fade">
+        <img src="css/images/Cafe Lamp logo.png" width="250" height="250">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis laborum, assumenda maiores
+          ducimus nihil obcaecati blanditiis quia quod dicta sit, dignissimos et quisquam praesentium pariatur nobis
+          mollitia non eligendi.</p>
+      </div>
+      <div class="item-2 js-fade">
+        <img src="css/images/Cafe Lamp logo.png" width="250" height="250">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis laborum, assumenda maiores
+          ducimus nihil obcaecati blanditiis quia quod dicta sit, dignissimos et quisquam praesentium pariatur nobis
+          mollitia non eligendi.</p>
+      </div>
+      <div class="item-3 js-fade">
+        <img src="css/images/Cafe Lamp logo.png" width="250" height="250">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis laborum, assumenda maiores
+          ducimus nihil obcaecati blanditiis quia quod dicta sit, dignissimos et quisquam praesentium pariatur nobis
+          mollitia non eligendi.</p>
+      </div>
+      <div class="item-4 js-fade">
+        <img src="css/images/Cafe Lamp logo.png" width="250" height="250">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis laborum, assumenda maiores
+          ducimus nihil obcaecati blanditiis quia quod dicta sit, dignissimos et quisquam praesentium pariatur nobis
+          mollitia non eligendi.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- between-img-2 -->
+  <div class="between-img-5">
+
+  </div>
+
+  <!-- sns -->
+  <div class="sns-menu js-fade" id="insta">
+    <div class="food-main-1 text-center">
+      <h2>Instagram</h2>
+      <p>みなさまの素敵な投稿をご紹介させていただきます。
+        ぜひ、お食事の際は、#カフェランプ でご投稿ください。</p>
+    </div>
+    <div class="sns-items d-flex flex-wrap justify-content-center">
+      <div class="sns-item-1">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+      <div class="sns-item-2">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+      <div class="sns-item-3">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+      <div class="sns-item-4">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+
+      <div class="sns-item-5">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+      <div class="sns-item-6">
+        <img src="css/images/Cafe Lamp logo.png" width="100" height="150">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <small>© 組織名（Co. Ltd.） 発行年数</small>
+  </footer>
+
+  <!-- bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
